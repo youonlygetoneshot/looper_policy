@@ -5,9 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Looper's Escape: Daily - Third-party licences</title>
 <style>
-  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #222; }
+  :root { color-scheme: light dark; --bg: #ffffff; --text: #222222; --box: #f4f4f4; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d0b1f; --text: #d9dcf0; --box: #181530; --link: #6ad8ff; }
+  }
+  body { background: var(--bg); color: var(--text); font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
   h1 { font-size: 1.5rem; } h2 { font-size: 1.1rem; margin-top: 2rem; }
-  pre { white-space: pre-wrap; background: #f4f4f4; padding: 1rem; border-radius: 6px; font-size: 0.9rem; }
+  a { color: var(--link); }
+  pre { white-space: pre-wrap; background: var(--box); padding: 1rem; border-radius: 6px; font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -21,7 +26,9 @@
 <p>Copyright (c) 2020 Godot Engine contributors</p>
 
 <h2>Notification Scheduler, Share and GMPShared (godot-mobile-plugins)</h2>
-<p>Copyright (c) Cengiz and the godot-mobile-plugins contributors. Released under the MIT licence </p>
+<p>Copyright (c) Cengiz and the godot-mobile-plugins contributors. Released under the MIT licence.</p>
+<p>Source: <a href="https://github.com/godot-mobile-plugins/godot-notification-scheduler">godot-notification-scheduler</a>,
+<a href="https://github.com/godot-mobile-plugins/godot-share">godot-share</a> (GMPShared is the shared library used by both).</p>
 
 <h2>The MIT licence</h2>
 <pre>Permission is hereby granted, free of charge, to any person obtaining a copy
